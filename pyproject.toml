@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ServiceX_DID_Finder_demo"
+version = "0.1.0"
+description = "Demo/Template package for a ServiceX DID Finder"
+authors = ["Gordon Watts <gwatts@uw.edu>"]
+license = "Apache License 2.0"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9"
+servicex-did-finder-lib = "^1.0.0-beta.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+func-adl-servicex = "^1.0.4"
+jupyterlab = "^3.0.15"
+matplotlib = "^3.4.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
