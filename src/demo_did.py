@@ -1,6 +1,8 @@
 from typing import Any, AsyncGenerator, Dict
 from servicex_did_finder_lib import start_did_finder
 import logging
+from urllib.request import urlopen
+import re
 
 __log = logging.getLogger(__name__)
 
