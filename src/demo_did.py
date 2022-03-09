@@ -36,7 +36,7 @@ async def find_files(did_name: str, info: Dict[str, Any]) -> AsyncGenerator[Dict
 
     for file in root_file:
         yield {
-            'file_path': "http://opendata.cern.ch/record/3827/files/mc_167740.WenuWithB.root",  # Path accessible via transformers (root, http)
+            'file_path': file,  # Path accessible via transformers (root, http)
             'adler32': 0,  # No clue
             'file_size': 0,  # Size in bytes if known
             'file_events': 0,  # Number of events if known
